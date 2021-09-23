@@ -59,7 +59,7 @@ public class BotLivepersonincTest {
 	@Given("^Webdriver Properties are loadet$")
 	public void webdriver_Properties_are_loadet() {
 		driver = new ChromeDriver();
-		wait = new WebDriverWait(driver, 60 * 3);
+		wait = new WebDriverWait(driver, 20);
 	}
 
 	@When("^Webdriverlogger is in LogLevel Level\\.INFO$")
