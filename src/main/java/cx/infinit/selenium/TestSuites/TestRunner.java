@@ -1,4 +1,4 @@
-package CocumberSamples.TestSuites;
+package cx.infinit.selenium.TestSuites;
 
 import org.junit.runner.RunWith;
 import cucumber.api.CucumberOptions;
@@ -7,8 +7,8 @@ import cucumber.api.junit.Cucumber;
 
 	@RunWith(Cucumber.class)
 	@CucumberOptions(
-			features = "src/main/java/CocumberSamples/Features/dealsmap.feature", //the path of the feature files
-			glue={"CocumberSamples.stepDefinitions"}, //the path of the step definition files
+			features = "src/main/java/cx/infinit/selenium/Features/livepersoninc.feature", //the path of the feature files
+			glue={"cx.infinit.selenium.stepDefinitions"}, //the path of the step definition files
 			format= {"pretty","html:test-outout", "json:json_output/cucumber.json", "junit:junit_xml/cucumber.xml"}, //to generate different types of reporting
 			monochrome = true, //display the console output in a proper readable format
 			strict = true, //it will check if any step is not defined in step definition file
