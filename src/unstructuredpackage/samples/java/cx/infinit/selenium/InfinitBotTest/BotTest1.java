@@ -98,7 +98,6 @@ public class BotTest1 {
 		int elemsize = driver.findElements(reflectPCmassageElem).size();
 		System.out.printf("Element %s = size %d%n",reflectPCmassageElem,elemsize);
 		wait.until(ExpectedConditions.elementToBeClickable(reflectPCmassageElem));
-		//Thread.sleep(4000);
 		
 		TypetextAndSend(driver,wait,MtextField, BotComandEnum.READ.toString());
 		

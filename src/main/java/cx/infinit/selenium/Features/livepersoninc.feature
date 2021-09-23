@@ -1,4 +1,4 @@
-@FunctionalTest
+@SmokeTest
 Feature: Tests livepersoninc Chatbot Website
 
   # https://livepersoninc.github.io/visitor-page/?siteid=70057248

@@ -1,167 +1,244 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/main/java/CocumberSamples/Features/dealsmap.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/main/java/cx/infinit/selenium/Features/livepersoninc.feature");
 formatter.feature({
-  "line": 1,
-  "name": "Deal data creation",
+  "line": 2,
+  "name": "Tests livepersoninc Chatbot Website",
   "description": "",
-  "id": "deal-data-creation",
-  "keyword": "Feature"
+  "id": "tests-livepersoninc-chatbot-website",
+  "keyword": "Feature",
+  "tags": [
+    {
+      "line": 1,
+      "name": "@SmokeTest"
+    }
+  ]
 });
 formatter.scenario({
-  "line": 3,
-  "name": "Free CRM Create a new deal scenario",
-  "description": "",
-  "id": "deal-data-creation;free-crm-create-a-new-deal-scenario",
-  "type": "scenario",
-  "keyword": "Scenario"
-});
-formatter.step({
-  "line": 5,
-  "name": "user is already on Login Page",
-  "keyword": "Given "
-});
-formatter.step({
+  "comments": [
+    {
+      "line": 4,
+      "value": "# https://livepersoninc.github.io/visitor-page/?siteid\u003d70057248"
+    }
+  ],
   "line": 6,
-  "name": "title of login page is Free CRM",
-  "keyword": "When "
+  "name": "livepersonic Chatot Senario",
+  "description": "",
+  "id": "tests-livepersoninc-chatbot-website;livepersonic-chatot-senario",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 5,
+      "name": "@First"
+    }
+  ]
 });
 formatter.step({
   "line": 7,
-  "name": "user enters username and password",
-  "rows": [
+  "name": "Webdriver Started",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 8,
+  "name": "Webdriver Properties are loadet",
+  "keyword": "Given "
+});
+formatter.step({
+  "comments": [
     {
-      "cells": [
-        "username",
-        "password"
-      ],
-      "line": 8
-    },
-    {
-      "cells": [
-        "naveenk",
-        "test@123"
-      ],
-      "line": 9
+      "line": 9,
+      "value": "# USE\u003e cx.infinit.selenium.Uitities.DriverUtilities.setpropertys();"
     }
   ],
-  "keyword": "Then "
+  "line": 10,
+  "name": "Webdriverlogger is in LogLevel Level.INFO",
+  "keyword": "When "
 });
 formatter.step({
   "line": 11,
-  "name": "user clicks on login button",
+  "name": "user opens livepersoninc",
   "keyword": "Then "
 });
 formatter.step({
   "line": 12,
-  "name": "user is on home page",
+  "name": "user opens LiveChat",
   "keyword": "Then "
 });
 formatter.step({
   "line": 13,
-  "name": "user moves to new deal page",
+  "name": "user waits for option Chatmenu",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 14,
-  "name": "user enters deal details",
-  "rows": [
+  "comments": [
     {
-      "cells": [
-        "title",
-        "amount",
-        "probability",
-        "commission"
-      ],
-      "line": 15
+      "line": 14,
+      "value": "# BOT"
     },
     {
-      "cells": [
-        "test deal1",
-        "1000",
-        "50",
-        "10"
-      ],
-      "line": 16
+      "line": 15,
+      "value": "# OPTIONS:"
     },
     {
-      "cells": [
-        "test deal2",
-        "2000",
-        "60",
-        "20"
-      ],
-      "line": 17
+      "line": 16,
+      "value": "#\u003e READ"
     },
     {
-      "cells": [
-        "test deal3",
-        "3000",
-        "70",
-        "30"
-      ],
-      "line": 18
+      "line": 17,
+      "value": "#\u003e SQL"
+    },
+    {
+      "line": 18,
+      "value": "#\u003e WRITE"
     }
   ],
+  "line": 19,
+  "name": "user sends Read in Massage Texfield",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 20,
+  "comments": [
+    {
+      "line": 20,
+      "value": "#USER: \u003cREAD\u003e"
+    }
+  ],
+  "line": 21,
+  "name": "user waits for first Succeeded",
+  "keyword": "Then "
+});
+formatter.step({
+  "comments": [
+    {
+      "line": 22,
+      "value": "# BOT"
+    },
+    {
+      "line": 23,
+      "value": "# \u003cSucceeded\u003e"
+    }
+  ],
+  "line": 24,
+  "name": "user sends RESET in Massage Texfield",
+  "keyword": "Then "
+});
+formatter.step({
+  "comments": [
+    {
+      "line": 25,
+      "value": "#USER: \u003cRESET\u003e"
+    }
+  ],
+  "line": 26,
+  "name": "user waits for first Session deleted",
+  "keyword": "Then "
+});
+formatter.step({
+  "comments": [
+    {
+      "line": 27,
+      "value": "# BOT"
+    },
+    {
+      "line": 28,
+      "value": "# \u003cSession deleted\u003e"
+    }
+  ],
+  "line": 29,
+  "name": "user sends SQL in Massage Texfield",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 30,
   "name": "Close the browser",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "DealsStepWithMapDefinition.user_already_on_login_page()"
+  "location": "BotLivepersonincTest.webdriver_Started()"
 });
 formatter.result({
-  "duration": 4140163600,
+  "duration": 61115000,
   "status": "passed"
 });
 formatter.match({
-  "location": "DealsStepWithMapDefinition.title_of_login_page_is_free_CRM()"
+  "location": "BotLivepersonincTest.webdriver_Properties_are_loadet()"
 });
 formatter.result({
-  "duration": 5150000,
+  "duration": 1734969800,
   "status": "passed"
 });
 formatter.match({
-  "location": "DealsStepWithMapDefinition.user_enters_username_and_password(DataTable)"
+  "location": "BotLivepersonincTest.webdriverlogger_is_in_LogLevel_Level_INFO()"
 });
 formatter.result({
-  "duration": 47675400,
-  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"*[name\u003d\u0027username\u0027]\"}\n  (Session info: chrome\u003d94.0.4606.54)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:25:48\u0027\nSystem info: host: \u0027ICXNBR911RTM8\u0027, ip: \u0027192.168.2.122\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0-262\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.54, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\\Users\\ADMINU~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:60055}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 90edce86ff6d980d1956c03d269fcb55\n*** Element info: {Using\u003dname, value\u003dusername}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)\r\n\tat org.openqa.selenium.By$ByName.findElement(By.java:284)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat CocumberSamples.stepDefinitions.DealsStepWithMapDefinition.user_enters_username_and_password(DealsStepWithMapDefinition.java:61)\r\n\tat ✽.Then user enters username and password(src/main/java/CocumberSamples/Features/dealsmap.feature:7)\r\n",
+  "duration": 23200,
+  "status": "passed"
+});
+formatter.match({
+  "location": "BotLivepersonincTest.user_opens_livepersoninc()"
+});
+formatter.result({
+  "duration": 1097365900,
+  "status": "passed"
+});
+formatter.match({
+  "location": "BotLivepersonincTest.user_opens_LiveChat()"
+});
+formatter.result({
+  "duration": 7552399600,
+  "status": "passed"
+});
+formatter.match({
+  "location": "BotLivepersonincTest.user_waits_for_option_Chatmenu()"
+});
+formatter.result({
+  "duration": 7639938300,
+  "status": "passed"
+});
+formatter.match({
+  "location": "BotLivepersonincTest.user_sends_Read_in_Massage_Texfield()"
+});
+formatter.result({
+  "duration": 321529301,
+  "status": "passed"
+});
+formatter.match({
+  "location": "BotLivepersonincTest.user_waits_for_first_Succeeded()"
+});
+formatter.result({
+  "duration": 5970818500,
+  "status": "passed"
+});
+formatter.match({
+  "location": "BotLivepersonincTest.user_sends_RESET_in_Massage_Texfield()"
+});
+formatter.result({
+  "duration": 8257512600,
+  "status": "passed"
+});
+formatter.match({
+  "location": "BotLivepersonincTest.user_waits_for_first_Session_deleted()"
+});
+formatter.result({
+  "duration": 95429299,
+  "status": "passed"
+});
+formatter.match({
+  "location": "BotLivepersonincTest.user_sends_SQL_in_Massage_Texfield()"
+});
+formatter.result({
+  "duration": 8295579900,
+  "status": "passed"
+});
+formatter.match({
+  "location": "BotLivepersonincTest.close_the_browser()"
+});
+formatter.result({
+  "duration": 3444500,
+  "error_message": "java.lang.AssertionError: expected:\u003ctrue\u003e but was:\u003cfalse\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:120)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat cx.infinit.selenium.stepDefinitions.BotLivepersonincTest.close_the_browser(BotLivepersonincTest.java:161)\r\n\tat ✽.Then Close the browser(src/main/java/cx/infinit/selenium/Features/livepersoninc.feature:30)\r\n",
   "status": "failed"
 });
-formatter.match({
-  "location": "DealsStepWithMapDefinition.user_clicks_on_login_button()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "DealsStepWithMapDefinition.user_is_on_hopme_page()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "DealsStepWithMapDefinition.user_moves_to_new_deals_page()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "DealsStepWithMapDefinition.user_enters_contacts_details(DataTable)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "DealsStepWithMapDefinition.close_the_browser()"
-});
-formatter.result({
-  "status": "skipped"
-});
 formatter.after({
-  "duration": 816619600,
+  "duration": 698218300,
   "status": "passed"
 });
 });
