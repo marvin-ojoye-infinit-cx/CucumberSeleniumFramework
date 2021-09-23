@@ -1,4 +1,4 @@
-package CocumberSamples.MyRunner;
+package CocumberSamples.TestSuites;
 
 import java.net.URL;
 import java.util.PropertyResourceBundle;

@@ -1,4 +1,4 @@
-package CocumberSamples.MyRunner;
+package CocumberSamples.TestSuites;
 
 import org.junit.runner.RunWith;
 import cucumber.api.CucumberOptions;
