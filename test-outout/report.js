@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/main/java/CocumberSamples.Features/taggedhooks.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/main/java/CocumberSamples/Features/taggedhooks.feature");
 formatter.feature({
   "line": 1,
   "name": "Test Tagged Hooks",

@@ -136,6 +136,6 @@
     "description": "",
     "id": "test-tagged-hooks",
     "keyword": "Feature",
-    "uri": "src/main/java/CocumberSamples.Features/taggedhooks.feature"
+    "uri": "src/main/java/CocumberSamples/Features/taggedhooks.feature"
   }
 ]
