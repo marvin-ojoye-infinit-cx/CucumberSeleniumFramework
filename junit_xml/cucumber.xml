@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="42.926194">
-<testcase classname="Tests livepersoninc Chatbot Website" name="livepersonic Chatot Senario" time="42.926194">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="52.62044">
+<testcase classname="Tests livepersoninc Chatbot Website" name="livepersonic Chatot Senario" time="52.62044">
 <system-out><![CDATA[Given Webdriver Started.....................................................passed
 Given Webdriver Properties are loadet.......................................passed
 When Webdriverlogger is in LogLevel Level.INFO..............................passed
