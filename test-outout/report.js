@@ -156,88 +156,58 @@ formatter.match({
   "location": "BotLivepersonincTest.webdriver_Started()"
 });
 formatter.result({
-  "duration": 92121600,
+  "duration": 112381500,
   "status": "passed"
 });
 formatter.match({
   "location": "BotLivepersonincTest.webdriver_Properties_are_loadet()"
 });
 formatter.result({
-  "duration": 1802141500,
+  "duration": 1895852000,
   "status": "passed"
 });
 formatter.match({
   "location": "BotLivepersonincTest.webdriverlogger_is_in_LogLevel_Level_INFO()"
 });
 formatter.result({
-  "duration": 25200,
+  "duration": 31800,
   "status": "passed"
 });
 formatter.match({
   "location": "BotLivepersonincTest.user_opens_livepersoninc()"
 });
 formatter.result({
-  "duration": 1463035800,
+  "duration": 1297472600,
   "status": "passed"
 });
 formatter.match({
   "location": "BotLivepersonincTest.user_opens_LiveChat()"
 });
 formatter.result({
-  "duration": 6569258100,
+  "duration": 3413634300,
   "status": "passed"
 });
 formatter.match({
   "location": "BotLivepersonincTest.user_waits_for_option_Chatmenu()"
 });
 formatter.result({
-  "duration": 10865551600,
+  "duration": 8189131700,
   "status": "passed"
 });
 formatter.match({
   "location": "BotLivepersonincTest.user_sends_Read_in_Massage_Texfield()"
 });
 formatter.result({
-  "duration": 361738000,
+  "duration": 345388800,
   "status": "passed"
 });
 formatter.match({
   "location": "BotLivepersonincTest.user_waits_for_first_Succeeded()"
 });
 formatter.result({
-  "duration": 14010272900,
+  "duration": 3785060700,
   "status": "passed"
 });
 formatter.match({
   "location": "BotLivepersonincTest.user_sends_RESET_in_Massage_Texfield()"
-});
-formatter.result({
-  "duration": 8318148500,
-  "status": "passed"
-});
-formatter.match({
-  "location": "BotLivepersonincTest.user_waits_for_first_Session_deleted()"
-});
-formatter.result({
-  "duration": 95283100,
-  "status": "passed"
-});
-formatter.match({
-  "location": "BotLivepersonincTest.user_sends_SQL_in_Massage_Texfield()"
-});
-formatter.result({
-  "duration": 8281337400,
-  "status": "passed"
-});
-formatter.match({
-  "location": "BotLivepersonincTest.close_the_browser()"
-});
-formatter.result({
-  "duration": 1874100,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 759652300,
-  "status": "passed"
-});
 });
